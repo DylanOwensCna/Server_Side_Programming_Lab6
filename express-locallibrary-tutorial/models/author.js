@@ -36,7 +36,7 @@ AuthorSchema.virtual("DOB_Formatted").get(function () {
 });
 
 AuthorSchema.virtual("DOD_Formatted").get(function () {
-  return this.date_of_birth ? DateTime.fromJSDate(this.date_of_birth).toLocaleString(DateTime.DATE_MED) : '';
+  return this.date_of_death ? DateTime.fromJSDate(this.date_of_death).toLocaleString(DateTime.DATE_MED) : '';
 });
 
 // Export model
